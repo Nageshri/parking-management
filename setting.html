@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management - Settings</title>
+    <link rel="stylesheet" href="stylessetting.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Parking Management - Settings</div>
+            <nav>
+                <ul>
+                    <li><a href="parkingm.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="report.html">Reports</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main-content">
+        <div class="container">
+            <h2>charges</h2>
+            <form>
+                <div class="form-group">
+                    <label for="parking-rate">Parking Rate (rupees/hour)</label>
+                    <input type="number" id="parking-rate" name="parking-rate" step="0.01" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="max-capacity">Max Capacity</label>
+                    <input type="number" id="max-capacity" name="max-capacity" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-notification">Email Notification</label>
+                    <select id="email-notification" name="email-notification">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Save Changes</button>
+            </form>
+        </div>
+    </section>
+<br><br>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Parking Management</p>
+        </div>
+    </footer>
+</body>
+</html>
